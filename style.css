@@ -1,0 +1,173 @@
+main {
+  width: 100%;
+  height: 100vh;
+}
+.navbar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7vw;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2vh;
+}
+
+.section-info {
+  height: 100%;
+  max-height: -wedkit-fill-available;
+  display: flex;
+  z-index: 1;
+  justify-content: space-around;
+}
+
+.section-info .container .flex-col {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  padding: 2rem;
+}
+
+.content h2 {
+  font-size: 5.5rem;
+  word-spacing: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border: none;
+}
+
+.btn button {
+  padding: 1rem 4rem;
+  border-radius: 30px;
+}
+
+.flex-col:first-child .area {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+}
+
+.section-info .row {
+  width: 100%;
+  background-color: var(--White);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.section-info .row .flex-col:first-child {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.section-info .row .flex-col:last-of-type {
+  width: 50%;
+}
+
+.image-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.image-container::after {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+}
+
+.flex-col:first-of-type .numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+  padding-top: 4rem;
+}
+
+.numbers .rows {
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-info .row {
+    background-image: url(/images/showroom10_1500x.webp);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .section-info .row .flex-col .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+  }
+
+  .section-info .area {
+    padding-left: 5rem;
+  }
+
+  .section-info h4 {
+    font-size: 1rem;
+  }
+
+  h2,
+  h3,
+  h4,
+  p {
+    color: white;
+  }
+
+  .section-info h2 {
+    font-size: 3rem;
+    word-spacing: 0.5rem;
+  }
+
+  .section-info .row .flex-col .image-container {
+    display: none;
+  }
+}
