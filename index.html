@@ -1,71 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Furniture</title>
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">Furniture</div>
 
-        <ul>
-          <li><a href=""></a>Home</li>
-          <li><a href=""></a>Features</li>
-          <li><a href=""></a>Interior</li>
-          <li><a href=""></a>About</li>
-          <li><a href=""></a>Contact</li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Furniture</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar nav-up-down">
+      <div class="logo">
+        <a href=""><span>Furniture</span></a>
       </div>
-    </header>
-    <main>
-      <section class="section-info">
-        <div class="container">
-          <div class="row">
-            <div class="flex-col">
-              <div class="text-overlay">
-                <div class="content">
-                  <h2>Modern Interior design for you</h2>
+      <!--added class for desktop to tell teh difference-->
+      <ul class="nav-desktop">
+        <!--put text inside a href so its clickable -->
+        <li><a href="">Home</a></li>
+        <li><a href="">Features</a></li>
+        <li><a href="">Interior</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <div class="bar bar-top"></div>
+        <div class="bar bar-bottom"></div>
+      </div>
+      <div class="mobile-view">
+        <nav class="nav-row">
+          <ul class="nav-col">
+            <li>Home</li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="section-info">
+      <div class="container">
+        <div class="row">
+          <div class="flex-col">
+            <div class="text-overlay">
+              <div class="content">
+                <h2>Modern Interior design for you</h2>
 
-                  <div class="area">
-                    <h4>
-                      we create the design that you dream of and make it alive
-                    </h4>
-                  </div>
-
-                  <div class="btn">
-                    <button>Contact us</button>
-                  </div>
+                <div class="area">
+                  <h4>we create the design that you dream of and make it alive</h4>
                 </div>
 
-                <div class="numbers">
-                  <div class="rows">
-                    <h3>15</h3>
-                    <p>years experience</p>
-                  </div>
-
-                  <div class="rows">
-                    <h3>569+</h3>
-                    <p>happy customer</p>
-                  </div>
+                <div class="btn">
+                  <button>Contact us</button>
                 </div>
               </div>
-            </div>
-            <div class="flex-col">
-              <div class="image-container">
-                <img
-                  src="/images/showroom10_1500x.webp"
-                  alt=""
-                  class="overlay"
-                />
+
+              <div class="numbers">
+                <div class="rows">
+                  <h3>15</h3>
+                  <p>years experience</p>
+                </div>
+
+                <div class="rows">
+                  <h3>569+</h3>
+                  <p>happy customer</p>
+                </div>
               </div>
             </div>
           </div>
+          <div class="flex-col">
+            <div class="image-container">
+              <img src="/images/showroom10_1500x.webp" alt="" class="overlay" />
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="index.js"></script>
+
 </html>
